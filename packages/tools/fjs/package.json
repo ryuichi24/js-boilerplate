@@ -1,0 +1,14 @@
+{
+  "name": "@js-boilerplate/fjs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "author": "Ryuichi Nishi",
+  "license": "",
+  "bin": {
+    "fjs": "src/index.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
