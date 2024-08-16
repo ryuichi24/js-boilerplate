@@ -1,0 +1,19 @@
+@startuml
+
+' configuration
+hide circle
+skinparam linetype ortho
+
+' comment
+entity "users" as users {
+ id: number
+ --
+ first_name: varchar2(128)
+ last_name: varchar2(128)
+}
+note right
+ <b>Note</b>
+ This is the users table
+end note
+
+@enduml

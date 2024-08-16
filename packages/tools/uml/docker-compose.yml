@@ -1,0 +1,9 @@
+services:
+  plantuml-server:
+    image: plantuml/plantuml-server:jetty
+    container_name: plantuml-local-server
+    # list of env variables: https://github.com/plantuml/plantuml-server?tab=readme-ov-file#how-to-set-plantuml-options
+    environment:
+      BASE_URL: "uml"
+    ports:
+      - "8080:8080"
