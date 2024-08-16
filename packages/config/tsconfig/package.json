@@ -1,0 +1,9 @@
+{
+  "name": "@js-boilerplate/tsconfig",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "private": true,
+  "author": "Ryuichi Nishi",
+  "license": "MIT"
+}

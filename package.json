@@ -1,0 +1,11 @@
+{
+  "name": "js-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "add-module": "node scripts/add-module.cjs"
+  },
+  "keywords": [],
+  "author": "Ryuichi Nishi",
+  "license": "MIT"
+}
