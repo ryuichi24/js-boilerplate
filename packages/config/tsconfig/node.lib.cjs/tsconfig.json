@@ -1,0 +1,8 @@
+{
+  "display": "Node Lib CJS",
+  "extends": "../node.lib/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "Node10"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "display": "Base",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "strict": true,
+    "sourceMap": true,
+    // skip type checking for third-party libraries installed in node_modules
+    "skipLibCheck": true,
+    "removeComments": true,
+    // https://www.typescriptlang.org/tsconfig/#node16nodenext
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  }
+}

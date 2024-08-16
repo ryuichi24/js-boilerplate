@@ -1,0 +1,7 @@
+{
+  "extends": "@js-boilerplate/tsconfig/node",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
