@@ -1,0 +1,28 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [],
+  "tasks": {
+    "lint": {},
+    "format": {},
+    "@js-boilerplate/playground-node#dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
+    "@js-boilerplate/playground-ts-node#dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
+    "@js-boilerplate/playground-react#dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
+    "@js-boilerplate/playground-ts-react#dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    }
+  }
+}

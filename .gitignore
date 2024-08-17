@@ -8,3 +8,5 @@ node_modules
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 .env
+
+.turbo

@@ -3,9 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "dev:node": "turbo run @js-boilerplate/playground-node#dev",
+    "dev:ts-node": "turbo run @js-boilerplate/playground-ts-node#dev",
+    "dev:react": "turbo run @js-boilerplate/playground-react#dev",
+    "dev:ts-react": "turbo run @js-boilerplate/playground-ts-react#dev",
     "add-module": "node scripts/add-module.cjs"
   },
   "keywords": [],
   "author": "Ryuichi Nishi",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2",
+    "turbo": "^2.0.14"
+  },
+  "packageManager": "pnpm@9.2.0",
+  "engines": {
+    "pnpm": ">=9.2.0",
+    "npm": "use pnpm!!!!!",
+    "yarn": "use pnpm!!!!!"
+  }
 }
