@@ -4,6 +4,16 @@
   "tasks": {
     "lint": {},
     "format": {},
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
+    "@js-boilerplate/desktop-renderer#dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
     "@js-boilerplate/playground-node#dev": {
       "cache": false,
       "persistent": true,
@@ -25,7 +35,7 @@
       "dependsOn": []
     },
     "build": {
-      "dependsOn": ["^@js-boilerplate/decorator-factory#build"]
+      "dependsOn": []
     },
     "@js-boilerplate/decorator-factory#build": {
       "dependsOn": ["^@js-boilerplate/util#build"]

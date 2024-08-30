@@ -54,3 +54,26 @@ pnpm add <dependency name> --workspace-root # or pnpm add <dependency name> -w
   }
 }
 ```
+
+# Support multiple long-running tasks
+
+With Turborepo, we want to configure it so that it can start both a development server of the renderer process and the main process at the same time.
+
+- https://github.com/vercel/turborepo/issues/1497
+- https://github.com/vercel/turborepo/issues/986
+
+## turborepo filter
+
+Using a `--filter` options in turbo CLI, you can specify specific projects/modules to run the command.
+
+```json
+{
+  "scripts": {
+    "dev:desktop": "turbo run dev --filter=\\{\"./apps/desktop/**/*\"\\}"
+  }
+}
+```
+
+# What is "task" in turborepo
+
+"task" in turborepo refers to a command in the `scripts` section of the `package.json` file. So it does not seem we can make our own task in the configuration file.

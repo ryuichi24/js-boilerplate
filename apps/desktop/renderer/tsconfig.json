@@ -1,0 +1,11 @@
+{
+  "extends": "@js-boilerplate/tsconfig/react",
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.vite.json" }],
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
