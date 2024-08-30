@@ -23,6 +23,18 @@
       "cache": false,
       "persistent": true,
       "dependsOn": []
+    },
+    "build": {
+      "dependsOn": ["^@js-boilerplate/decorator-factory#build"]
+    },
+    "@js-boilerplate/decorator-factory#build": {
+      "dependsOn": ["^@js-boilerplate/util#build"]
+    },
+    "@js-boilerplate/util#build": {
+      "dependsOn": ["^@js-boilerplate/type-util#build"]
+    },
+    "@js-boilerplate/type-util#build": {
+      "dependsOn": []
     }
   }
 }

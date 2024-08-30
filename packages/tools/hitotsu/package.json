@@ -1,0 +1,17 @@
+{
+  "name": "@js-boilerplate/hitotsu",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {},
+  "private": true,
+  "author": "Ryuichi Nishi",
+  "license": "MIT",
+  "bin": {
+    "hitotsu": "src/index.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "@js-boilerplate/util": "workspace:*"
+  }
+}

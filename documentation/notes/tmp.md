@@ -21,3 +21,36 @@ Adding a dependency to a workspace root project requires a `--workspace-root` fl
 ```bash
 pnpm add <dependency name> --workspace-root # or pnpm add <dependency name> -w
 ```
+
+# Support both ESM and CommonJS
+
+```json
+{
+  // omitted...
+  "scripts": {
+    "build": "pnpm build:esm & pnpm build:cjs",
+    "build:esm": "tsc -p tsconfig.json && fjs make ./dist/esm/package.json -c '{\"type\":\"module\"}'",
+    "build:cjs": "tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c '{\"type\":\"commonjs\"}'"
+  },
+  "devDependencies": {
+    "@js-boilerplate/tsconfig": "workspace:*",
+    "@js-boilerplate/fjs": "workspace:*",
+    "typescript": "^5.4.5"
+  },
+  // need to set the following properties for multiple module systems.
+  "main": "./dist/cjs/index.js",
+  //
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  }
+}
+```

@@ -1,0 +1,1 @@
+<h1 align="center">@js-boilerplate/decorator-factory</h1>

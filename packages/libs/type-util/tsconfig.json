@@ -1,0 +1,8 @@
+{
+  "display": "@js-boilerplate/js-utils ESM",
+  "extends": "@js-boilerplate/tsconfig/node.lib",
+  "compilerOptions": {
+    "outDir": "./dist/esm"
+  },
+  "include": ["src"]
+}

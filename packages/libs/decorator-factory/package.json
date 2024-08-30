@@ -1,0 +1,32 @@
+{
+  "name": "@js-boilerplate/decorator-factory",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pnpm build:esm & pnpm build:cjs",
+    "build:esm": "tsc -p tsconfig.json && fjs make ./dist/esm/package.json -c '{\"type\":\"module\"}'",
+    "build:cjs": "tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c '{\"type\":\"commonjs\"}'"
+  },
+  "private": true,
+  "author": "Ryuichi Nishi",
+  "license": "MIT",
+  "devDependencies": {
+    "@js-boilerplate/tsconfig": "workspace:*",
+    "@js-boilerplate/type-util": "workspace:*",
+    "@js-boilerplate/fjs": "workspace:*",
+    "typescript": "^5.4.5"
+  },
+  "main": "./dist/cjs/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  }
+}

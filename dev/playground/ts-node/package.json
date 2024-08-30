@@ -6,7 +6,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "yarn build && concurrently \"yarn tsc:watch\" \"yarn node:watch\"",
+    "dev": "pnpm build && concurrently \"pnpm tsc:watch\" \"pnpm node:watch\"",
     "build": "tsc",
     "node:watch": "node --watch dist/index.js",
     "tsc:watch": "tsc --watch"
@@ -15,6 +15,7 @@
     "@js-boilerplate/tsconfig": "workspace:*",
     "@types/node": "^20.11.20",
     "concurrently": "^8.2.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@js-boilerplate/util": "workspace:*"
   }
 }

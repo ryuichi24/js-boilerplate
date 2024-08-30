@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@js-boilerplate/hitotsu':
+        specifier: workspace:*
+        version: link:packages/tools/hitotsu
       dotenv-cli:
         specifier: ^7.4.2
         version: 7.4.2
@@ -38,6 +41,9 @@ importers:
       '@js-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../../../packages/config/tsconfig
+      '@js-boilerplate/util':
+        specifier: workspace:*
+        version: link:../../../packages/libs/util
       '@types/node':
         specifier: ^20.11.20
         version: 20.14.15
@@ -81,8 +87,71 @@ importers:
 
   packages/config/tsconfig: {}
 
+  packages/libs/decorator-factory:
+    devDependencies:
+      '@js-boilerplate/fjs':
+        specifier: workspace:*
+        version: link:../../tools/fjs
+      '@js-boilerplate/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@js-boilerplate/type-util':
+        specifier: workspace:*
+        version: link:../type-util
+      typescript:
+        specifier: ^5.4.5
+        version: 5.5.4
+
+  packages/libs/decorator-factory/dist/cjs: {}
+
+  packages/libs/decorator-factory/dist/esm: {}
+
+  packages/libs/type-util:
+    devDependencies:
+      '@js-boilerplate/fjs':
+        specifier: workspace:*
+        version: link:../../tools/fjs
+      '@js-boilerplate/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      typescript:
+        specifier: ^5.4.5
+        version: 5.5.4
+
+  packages/libs/type-util/dist/cjs: {}
+
+  packages/libs/type-util/dist/esm: {}
+
+  packages/libs/util:
+    devDependencies:
+      '@js-boilerplate/fjs':
+        specifier: workspace:*
+        version: link:../../tools/fjs
+      '@js-boilerplate/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@js-boilerplate/type-util':
+        specifier: workspace:*
+        version: link:../type-util
+      typescript:
+        specifier: ^5.4.5
+        version: 5.5.4
+
+  packages/libs/util/dist/cjs: {}
+
+  packages/libs/util/dist/esm: {}
+
   packages/tools/fjs:
     dependencies:
+      commander:
+        specifier: ^12.1.0
+        version: 12.1.0
+
+  packages/tools/hitotsu:
+    dependencies:
+      '@js-boilerplate/util':
+        specifier: workspace:*
+        version: link:../../libs/util
       commander:
         specifier: ^12.1.0
         version: 12.1.0

@@ -1,0 +1,8 @@
+{
+  "display": "js-boilerplate/js-utils CJS",
+  "extends": "@js-boilerplate/tsconfig/node.lib.cjs",
+  "compilerOptions": {
+    "outDir": "./dist/cjs"
+  },
+  "include": ["src"]
+}

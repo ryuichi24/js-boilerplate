@@ -3,6 +3,12 @@
   "extends": "../node.lib/tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
+    /*
+     * "Node" and "Node10" are almost the same.
+     * Both ignore "exports" and "type" properties in `package.json` file.
+     * So "main" must be specified.
+     * @see {@link https://blog.s2n.tech/articles/dont-use-moduleresolution-node#node--node10}
+     **/
     "moduleResolution": "Node10"
   }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "author": "Ryuichi Nishi",
-  "license": "",
+  "license": "MIT",
   "bin": {
     "fjs": "src/index.js"
   },
