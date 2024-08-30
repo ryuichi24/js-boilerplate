@@ -1,0 +1,64 @@
+{
+  "Console Shortcut": {
+    "prefix": "clg",
+    "body": ["console.log($1);", "$2"],
+    "description": "Log output to console",
+    "scope": "javascript,typescript"
+  },
+  "e33template for React Function Component": {
+    "prefix": "rf",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "export namespace ${TM_FILENAME_BASE} {",
+      "  export type Props = {$1};",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}.Props> = (props) => {",
+      "\tconst {} = props;",
+      "\treturn (<>${TM_FILENAME_BASE}</>);",
+      "}"
+    ],
+    "description": "Typescript React Function Component",
+    "scope": "typescriptreact"
+  },
+  "template for useState": {
+    "prefix": "us",
+    "body": ["const [$1, set${1/(.)/${1:/upcase}/}] = useState<$2>($3);"],
+    "scope": "typescriptreact"
+  },
+  "template for export all": {
+    "prefix": "ex",
+    "description": "export statement to export all items from module",
+    "body": ["export * from \"$1\";", ""],
+    "scope": "typescriptreact,javascriptreact,javascript,typescript"
+  },
+  "react context template": {
+    "prefix": "rctx",
+    "description": "react context template",
+    "body": [
+      "import { createContext } from \"react\";",
+      "",
+      "export namespace $1Ctx {",
+      "  export type State = {} & ReducerState;",
+      "",
+      "  export type ReducerState = {};",
+      "",
+      "  export type ReducerAction = { type: \"\" };",
+      "}",
+      "",
+      "export const $1Ctx = createContext<$1Ctx.State>({});",
+      "",
+      "export function reducer(state: $1Ctx.ReducerState, action: $1Ctx.ReducerAction) {",
+      "  const { type } = action;",
+      "",
+      "  switch (type) {",
+      "    default: {",
+      "      return state;",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "scope": "typescriptreact,typescript"
+  }
+}
