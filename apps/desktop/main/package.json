@@ -1,0 +1,26 @@
+{
+  "name": "@js-boilerplate/desktop-main",
+  "version": "1.0.0",
+  "author": "Ryuichi Nishi",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm build && concurrently \"pnpm tsc:watch\" \"pnpm electron:watch\"",
+    "build": "pnpm build:tsc && pnpm build:rename-preload",
+    "build:tsc": "tsc",
+    "build:rename-preload": "fjs rename ./dist/preload.js ./dist/preload.mjs",
+    "electron:watch": "electron --watch dist/index.js",
+    "tsc:watch": "tsc --watch"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@js-boilerplate/tsconfig": "workspace:*",
+    "@js-boilerplate/fjs": "workspace:*",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.20",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^28.2.7"
+  }
+}
