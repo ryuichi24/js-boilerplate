@@ -2,10 +2,9 @@
   "display": "Node.js",
   "extends": "../base/tsconfig.json",
   "compilerOptions": {
-    // treat common js module as ES module: const moment = require("moment") => import * as moment from "moment"
-    "esModuleInterop": true,
-    // Module '"path"' can only be default-imported using the 'allowSyntheticDefaultImports' flag
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    // https://www.typescriptlang.org/tsconfig/#node16nodenext
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext"
   }
 }

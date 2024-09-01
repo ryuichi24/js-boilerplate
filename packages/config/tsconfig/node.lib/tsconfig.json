@@ -1,6 +1,6 @@
 {
   "display": "Node.js Lib",
-  "extends": "../base/tsconfig.json",
+  "extends": "../node/tsconfig.json",
   "compilerOptions": {
     "declaration": true
   }

@@ -1,0 +1,17 @@
+{
+  "display": "Node.js Common",
+  "extends": "../base/tsconfig.json",
+  "compilerOptions": {
+    // treat common js module as ES module: const moment = require("moment") => import * as moment from "moment"
+    "esModuleInterop": true,
+    "module": "commonjs",
+    /*
+     * "Node" and "Node10" are almost the same.
+     * Both ignore "exports" and "type" properties in `package.json` file.
+     * So "main" must be specified.
+     * @see {@link https://blog.s2n.tech/articles/dont-use-moduleresolution-node#node--node10}
+     **/
+    "moduleResolution": "Node10",
+    "target": "es2018"
+  }
+}
