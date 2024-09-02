@@ -12,9 +12,10 @@
   "author": "Ryuichi Nishi",
   "license": "MIT",
   "devDependencies": {
+    "@js-boilerplate/fjs": "workspace:*",
     "@js-boilerplate/tsconfig": "workspace:*",
     "@js-boilerplate/type-util": "workspace:*",
-    "@js-boilerplate/fjs": "workspace:*",
+    "@types/node": "^20.11.20",
     "typescript": "^5.4.5"
   },
   "main": "./dist/cjs/index.js",
@@ -77,6 +78,16 @@
       "require": {
         "types": "./dist/cjs/package-json/index.d.ts",
         "default": "./dist/cjs/package-json/index.js"
+      }
+    },
+    "./file-system": {
+      "import": {
+        "types": "./dist/esm/file-system/index.d.ts",
+        "default": "./dist/esm/file-system/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/file-system/index.d.ts",
+        "default": "./dist/cjs/file-system/index.js"
       }
     }
   }
