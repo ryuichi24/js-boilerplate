@@ -37,6 +37,8 @@
     "build": {
       "dependsOn": []
     },
+    "@js-boilerplate/desktop-renderer#build": {},
+    "@js-boilerplate/desktop-main#build": {},
     "@js-boilerplate/decorator-factory#build": {
       "dependsOn": ["^@js-boilerplate/util#build"]
     },
@@ -45,6 +47,20 @@
     },
     "@js-boilerplate/type-util#build": {
       "dependsOn": []
+    },
+    "@js-boilerplate/desktop-builder#build:publish": {
+      "dependsOn": [
+        "^@js-boilerplate/desktop-renderer#build",
+        "^@js-boilerplate/desktop-main#build"
+      ],
+      "cache": false
+    },
+    "@js-boilerplate/desktop-builder#build:local": {
+      "dependsOn": [
+        "^@js-boilerplate/desktop-renderer#build",
+        "^@js-boilerplate/desktop-main#build"
+      ],
+      "cache": false
     }
   }
 }

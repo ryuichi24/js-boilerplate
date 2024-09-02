@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "build": "turbo run build",
+    "build:desktop:publish": "turbo run @js-boilerplate/desktop-builder#build:publish",
+    "build:desktop:local": "turbo run @js-boilerplate/desktop-builder#build:local",
     "build:packages": "turbo run build --filter=\\{\"./packages/**/*\"\\}",
     "dev:desktop": "turbo run dev --filter=\\{\"./apps/desktop/**/*\"\\}",
     "dev:desktop:renderer": "turbo run @js-boilerplate/desktop-renderer#dev",

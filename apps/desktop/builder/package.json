@@ -1,0 +1,27 @@
+{
+  "name": "@js-boilerplate/desktop-builder",
+  "version": "1.0.0",
+  "author": "Ryuichi Nishi",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:publish": "tsx ./scripts/build.ts --publish",
+    "build:local": "tsx ./scripts/build.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@js-boilerplate/tsconfig": "workspace:*",
+    "@js-boilerplate/util": "workspace:*",
+    "@js-boilerplate/esm-helper": "workspace:*",
+    "commander": "^12.1.0",
+    "electron-builder": "^24.13.3",
+    "tsx": "^4.19.0",
+    "@types/node": "^20.11.20"
+  },
+  "dependencies": {
+    "@js-boilerplate/desktop-main": "workspace:*",
+    "@js-boilerplate/desktop-renderer": "workspace:*",
+    "@js-boilerplate/server": "workspace:*"
+  }
+}
