@@ -18,6 +18,7 @@
     "@js-boilerplate/tsconfig": "workspace:*",
     "@js-boilerplate/fjs": "workspace:*",
     "@js-boilerplate/esm-helper": "workspace:*",
+    "@js-boilerplate/process-event-emitter": "workspace:*",
     "typescript": "^5.3.3",
     "@types/node": "^20.11.20",
     "concurrently": "^8.2.2",

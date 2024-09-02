@@ -68,6 +68,9 @@ importers:
       '@js-boilerplate/fjs':
         specifier: workspace:*
         version: link:../../../packages/tools/fjs
+      '@js-boilerplate/process-event-emitter':
+        specifier: workspace:*
+        version: link:../../../packages/libs/process-event-emitter
       '@js-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../../../packages/config/tsconfig
@@ -205,6 +208,10 @@ importers:
         specifier: ^5.4.5
         version: 5.5.4
 
+  packages/libs/decorator-factory/dist/cjs: {}
+
+  packages/libs/decorator-factory/dist/esm: {}
+
   packages/libs/esm-helper:
     dependencies:
       '@js-boilerplate/tsconfig':
@@ -242,6 +249,30 @@ importers:
         specifier: ^5.4.5
         version: 5.5.4
 
+  packages/libs/file-system/dist/cjs: {}
+
+  packages/libs/file-system/dist/esm: {}
+
+  packages/libs/process-event-emitter:
+    devDependencies:
+      '@js-boilerplate/fjs':
+        specifier: workspace:*
+        version: link:../../tools/fjs
+      '@js-boilerplate/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@types/node':
+        specifier: ^20.11.20
+        version: 20.14.15
+      tsx:
+        specifier: ^4.7.1
+        version: 4.19.0
+      typescript:
+        specifier: ^5.3.3
+        version: 5.5.4
+
+  packages/libs/process-event-emitter/dist/cjs: {}
+
   packages/libs/type-util:
     devDependencies:
       '@js-boilerplate/fjs':
@@ -253,6 +284,10 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.5.4
+
+  packages/libs/type-util/dist/cjs: {}
+
+  packages/libs/type-util/dist/esm: {}
 
   packages/libs/util:
     devDependencies:
@@ -271,6 +306,10 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.5.4
+
+  packages/libs/util/dist/cjs: {}
+
+  packages/libs/util/dist/esm: {}
 
   packages/tools/cle:
     dependencies:

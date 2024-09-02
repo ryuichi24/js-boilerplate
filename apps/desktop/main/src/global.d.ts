@@ -1,5 +1,5 @@
 import { BrowserWindow, Tray } from "electron";
-import { ProcessEventEmitter } from "@naya-suite/process-event-emitter";
+import { ProcessEventEmitter } from "@js-boilerplate/process-event-emitter";
 
 // https://stackoverflow.com/a/53981706
 declare global {
