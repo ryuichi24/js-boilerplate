@@ -1,6 +1,6 @@
 import fs from "fs";
 import { program } from "commander";
-import { searchAll } from "@js-boilerplate/file-system";
+import { searchAll } from "@ts-template/file-system";
 
 // parsers
 function list(val) {

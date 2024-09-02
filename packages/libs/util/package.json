@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/util",
+  "name": "@ts-template/util",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -12,9 +12,9 @@
   "author": "Ryuichi Nishi",
   "license": "MIT",
   "devDependencies": {
-    "@js-boilerplate/fjs": "workspace:*",
-    "@js-boilerplate/tsconfig": "workspace:*",
-    "@js-boilerplate/type-util": "workspace:*",
+    "@ts-template/fjs": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
+    "@ts-template/type-util": "workspace:*",
     "@types/node": "^20.11.20",
     "typescript": "^5.4.5"
   },

@@ -13,7 +13,7 @@ In tasks, there is a special task called `persistent task` that is a long runnin
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": [],
   "tasks": {
-    "@js-boilerplate/playground-node#dev": {
+    "@ts-template/playground-node#dev": {
       "cache": false,
       "persistent": true, // <= need to be added!
       "dependsOn": []

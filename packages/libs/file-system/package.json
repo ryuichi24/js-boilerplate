@@ -3,7 +3,7 @@
   "description": "",
   "license": "MIT",
   "private": true,
-  "name": "@js-boilerplate/file-system",
+  "name": "@ts-template/file-system",
   "author": "Ryuichi Nishi",
   "type": "module",
   "exports": {
@@ -28,9 +28,9 @@
     "glob": "^11.0.0"
   },
   "devDependencies": {
-    "@js-boilerplate/fjs": "workspace:*",
-    "@js-boilerplate/tsconfig": "workspace:*",
-    "@js-boilerplate/type-util": "workspace:*",
+    "@ts-template/fjs": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
+    "@ts-template/type-util": "workspace:*",
     "@types/glob": "^8.1.0",
     "@types/node": "^20.11.20",
     "typescript": "^5.4.5"

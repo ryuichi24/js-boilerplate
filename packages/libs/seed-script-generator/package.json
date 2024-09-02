@@ -3,7 +3,7 @@
   "description": "",
   "license": "MIT",
   "private": true,
-  "name": "@js-boilerplate/seed-script-generator",
+  "name": "@ts-template/seed-script-generator",
   "author": "Ryuichi Nishi",
   "type": "module",
   "exports": {
@@ -25,8 +25,8 @@
     "build:cjs": "tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c '{\"type\":\"commonjs\"}'"
   },
   "devDependencies": {
-    "@js-boilerplate/fjs": "workspace:*",
-    "@js-boilerplate/tsconfig": "workspace:*",
+    "@ts-template/fjs": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
     "@types/node": "^20.11.20",
     "typescript": "^5.4.5"
   }

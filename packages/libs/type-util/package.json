@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/type-util",
+  "name": "@ts-template/type-util",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -11,8 +11,8 @@
   "author": "Ryuichi Nishi",
   "license": "MIT",
   "devDependencies": {
-    "@js-boilerplate/tsconfig": "workspace:*",
-    "@js-boilerplate/fjs": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
+    "@ts-template/fjs": "workspace:*",
     "typescript": "^5.4.5"
   },
   "main": "./dist/cjs/index.js",

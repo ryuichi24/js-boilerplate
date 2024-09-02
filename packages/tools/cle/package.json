@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/cle",
+  "name": "@ts-template/cle",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -9,7 +9,7 @@
     "cle": "src/index.js"
   },
   "dependencies": {
-    "@js-boilerplate/file-system": "workspace:*",
+    "@ts-template/file-system": "workspace:*",
     "commander": "^12.1.0"
   }
 }

@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/main</h1>
+<h1 align="center">@ts-template/main</h1>

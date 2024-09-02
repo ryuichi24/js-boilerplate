@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/playground-node",
+  "name": "@ts-template/playground-node",
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",

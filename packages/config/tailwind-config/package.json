@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/tailwind-config",
+  "name": "@ts-template/tailwind-config",
   "private": true,
   "version": "1.0.0",
   "devDependencies": {

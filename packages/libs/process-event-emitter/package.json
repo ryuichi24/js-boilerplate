@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/process-event-emitter",
+  "name": "@ts-template/process-event-emitter",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
@@ -25,8 +25,8 @@
     "build:cjs": "tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c '{\"type\":\"commonjs\"}'"
   },
   "devDependencies": {
-    "@js-boilerplate/fjs": "workspace:*",
-    "@js-boilerplate/tsconfig": "workspace:*",
+    "@ts-template/fjs": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
     "@types/node": "^20.11.20",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"

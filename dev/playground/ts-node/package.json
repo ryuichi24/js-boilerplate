@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/playground-ts-node",
+  "name": "@ts-template/playground-ts-node",
   "version": "1.0.0",
   "main": "src/index.ts",
   "license": "MIT",
@@ -12,11 +12,11 @@
     "tsc:watch": "tsc --watch"
   },
   "devDependencies": {
-    "@js-boilerplate/tsconfig": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
     "@types/node": "^20.11.20",
     "concurrently": "^8.2.2",
     "typescript": "^5.3.3",
-    "@js-boilerplate/util": "workspace:*",
-    "@js-boilerplate/type-util": "workspace:*"
+    "@ts-template/util": "workspace:*",
+    "@ts-template/type-util": "workspace:*"
   }
 }

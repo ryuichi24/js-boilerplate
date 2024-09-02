@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/seed-script-generator</h1>
+<h1 align="center">@ts-template/seed-script-generator</h1>

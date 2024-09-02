@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/type-util</h1>
+<h1 align="center">@ts-template/type-util</h1>

@@ -1,6 +1,6 @@
 {
-  "display": "js-boilerplate/js-utils CJS",
-  "extends": "@js-boilerplate/tsconfig/node.lib.cjs",
+  "display": "ts-template/js-utils CJS",
+  "extends": "@ts-template/tsconfig/node.lib.cjs",
   "compilerOptions": {
     "outDir": "./dist/cjs"
   },

@@ -1,4 +1,4 @@
-import { ArgumentTypes } from "@js-boilerplate/type-util";
+import { ArgumentTypes } from "@ts-template/type-util";
 
 type ClassConstructor = new (...args: any[]) => {};
 

@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/builder</h1>
+<h1 align="center">@ts-template/builder</h1>

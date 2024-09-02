@@ -1,13 +1,13 @@
 {
-  "name": "js-boilerplate",
+  "name": "ts-template",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "build": "turbo run build",
     "build:apps": "turbo run build --filter=\\{\"./apps/**/*\"\\}",
     "build:packages": "turbo run build --filter=\\{\"./packages/**/*\"\\}",
-    "build:desktop:publish": "turbo run @js-boilerplate/desktop-builder#build:publish",
-    "build:desktop:local": "turbo run @js-boilerplate/desktop-builder#build:local",
+    "build:desktop:publish": "turbo run @ts-template/desktop-builder#build:publish",
+    "build:desktop:local": "turbo run @ts-template/desktop-builder#build:local",
     "dev:desktop": "turbo run dev --filter=\\{\"./apps/desktop/**/*\"\\}",
     "dev:desktop:renderer": "turbo run dev --filter=\\{\"./apps/desktop/renderer/**/*\"\\}",
     "dev:node": "turbo run dev --filter=\\{\"./dev/playground/node/**/*\"\\}",
@@ -31,8 +31,8 @@
   "devDependencies": {
     "dotenv-cli": "^7.4.2",
     "turbo": "^2.0.14",
-    "@js-boilerplate/hitotsu": "workspace:*",
-    "@js-boilerplate/cle": "workspace:*"
+    "@ts-template/hitotsu": "workspace:*",
+    "@ts-template/cle": "workspace:*"
   },
   "packageManager": "pnpm@9.2.0",
   "engines": {

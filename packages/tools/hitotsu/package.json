@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/hitotsu",
+  "name": "@ts-template/hitotsu",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "commander": "^12.1.0",
-    "@js-boilerplate/util": "workspace:*"
+    "@ts-template/util": "workspace:*"
   }
 }

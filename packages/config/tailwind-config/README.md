@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/tailwind-config</h1>
+<h1 align="center">@ts-template/tailwind-config</h1>

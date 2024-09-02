@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/playground-ts-react",
+  "name": "@ts-template/playground-ts-react",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@js-boilerplate/tsconfig": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
     "@types/node": "^20.11.20",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",

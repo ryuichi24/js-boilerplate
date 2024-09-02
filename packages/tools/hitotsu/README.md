@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/hitotsu</h1>
+<h1 align="center">@ts-template/hitotsu</h1>

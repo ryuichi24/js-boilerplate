@@ -13,11 +13,11 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "@js-boilerplate/desktop-builder#build:publish": {
+    "@ts-template/desktop-builder#build:publish": {
       "cache": false,
       "dependsOn": ["^build"]
     },
-    "@js-boilerplate/desktop-builder#build:local": {
+    "@ts-template/desktop-builder#build:local": {
       "cache": false,
       "dependsOn": ["^build"]
     }

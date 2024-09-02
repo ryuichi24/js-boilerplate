@@ -3,7 +3,7 @@
 import fs from "fs";
 import path from "path";
 import { program } from "commander";
-import { PackageJSON } from "@js-boilerplate/util/package-json";
+import { PackageJSON } from "@ts-template/util/package-json";
 
 program
   .command("add <pathToModule>")

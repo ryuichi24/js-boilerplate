@@ -1,5 +1,5 @@
 {
-  "name": "@js-boilerplate/desktop-builder",
+  "name": "@ts-template/desktop-builder",
   "version": "1.0.0",
   "author": "Ryuichi Nishi",
   "description": "",
@@ -11,18 +11,18 @@
   },
   "type": "module",
   "devDependencies": {
-    "@js-boilerplate/tsconfig": "workspace:*",
-    "@js-boilerplate/util": "workspace:*",
-    "@js-boilerplate/file-system": "workspace:*",
-    "@js-boilerplate/esm-helper": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
+    "@ts-template/util": "workspace:*",
+    "@ts-template/file-system": "workspace:*",
+    "@ts-template/esm-helper": "workspace:*",
     "commander": "^12.1.0",
     "electron-builder": "^24.13.3",
     "tsx": "^4.19.0",
     "@types/node": "^20.11.20"
   },
   "dependencies": {
-    "@js-boilerplate/desktop-main": "workspace:*",
-    "@js-boilerplate/desktop-renderer": "workspace:*",
-    "@js-boilerplate/background-server": "workspace:*"
+    "@ts-template/desktop-main": "workspace:*",
+    "@ts-template/desktop-renderer": "workspace:*",
+    "@ts-template/background-server": "workspace:*"
   }
 }

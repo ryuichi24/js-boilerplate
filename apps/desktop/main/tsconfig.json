@@ -1,5 +1,5 @@
 {
-  "extends": "@js-boilerplate/tsconfig/node",
+  "extends": "@ts-template/tsconfig/node",
   "compilerOptions": {
     "outDir": "dist"
   },

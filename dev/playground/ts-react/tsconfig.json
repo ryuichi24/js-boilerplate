@@ -1,5 +1,5 @@
 {
-  "extends": "@js-boilerplate/tsconfig/react",
+  "extends": "@ts-template/tsconfig/react",
   "include": ["src"],
   "references": [{ "path": "./tsconfig.vite.json" }],
   "compilerOptions": {

@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/decorator-factory</h1>
+<h1 align="center">@ts-template/decorator-factory</h1>

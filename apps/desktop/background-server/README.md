@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/background-server</h1>
+<h1 align="center">@ts-template/background-server</h1>

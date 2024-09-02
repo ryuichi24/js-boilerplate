@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/cle</h1>
+<h1 align="center">@ts-template/cle</h1>

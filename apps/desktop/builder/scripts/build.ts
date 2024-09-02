@@ -5,13 +5,13 @@ import {
   cpDirIfExist,
   makeDirIfExist,
   makeFile,
-} from "@js-boilerplate/file-system";
+} from "@ts-template/file-system";
 import {
   PackageJSON,
   readPackageJsonFile,
   isNativeModule,
-} from "@js-boilerplate/util/package-json";
-import { buildESMHelpers } from "@js-boilerplate/esm-helper";
+} from "@ts-template/util/package-json";
+import { buildESMHelpers } from "@ts-template/esm-helper";
 
 const { require } = buildESMHelpers(import.meta.url);
 const isMac = process.platform === "darwin";

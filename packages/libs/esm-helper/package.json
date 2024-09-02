@@ -3,7 +3,7 @@
   "description": "",
   "license": "MIT",
   "private": true,
-  "name": "@js-boilerplate/esm-helper",
+  "name": "@ts-template/esm-helper",
   "author": "Ryuichi Nishi",
   "type": "module",
   "exports": {
@@ -18,7 +18,7 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@js-boilerplate/tsconfig": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
     "@types/node": "^20.11.20",
     "typescript": "^5.4.5"
   }

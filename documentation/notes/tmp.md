@@ -8,7 +8,7 @@ You need to specify a workspace project module version as following:
 
 ```json
 {
-  "@js-boilerplate/tsconfig": "workspace:*"
+  "@ts-template/tsconfig": "workspace:*"
 }
 ```
 
@@ -33,8 +33,8 @@ pnpm add <dependency name> --workspace-root # or pnpm add <dependency name> -w
     "build:cjs": "tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c '{\"type\":\"commonjs\"}'"
   },
   "devDependencies": {
-    "@js-boilerplate/tsconfig": "workspace:*",
-    "@js-boilerplate/fjs": "workspace:*",
+    "@ts-template/tsconfig": "workspace:*",
+    "@ts-template/fjs": "workspace:*",
     "typescript": "^5.4.5"
   },
   // need to set the following properties for multiple module systems.

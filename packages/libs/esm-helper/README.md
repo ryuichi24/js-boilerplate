@@ -1,1 +1,1 @@
-<h1 align="center">@js-boilerplate/esm-helper</h1>
+<h1 align="center">@ts-template/esm-helper</h1>
