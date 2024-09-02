@@ -38,6 +38,27 @@ program
       name: fullNewModuleName,
       author: rootPackageJson.author,
       type: options.commonjs ? "commonjs" : "module",
+      exports: {
+        ".": {
+          import: {
+            types: "./dist/esm/index.d.ts",
+            default: "./dist/esm/index.js",
+          },
+          require: {
+            types: "./dist/cjs/index.d.ts",
+            default: "./dist/cjs/index.js",
+          },
+        },
+      },
+      main: "./dist/cjs/index.js",
+      scripts: {
+        build: "pnpm build:esm & pnpm build:cjs",
+        "build:esm":
+          'tsc -p tsconfig.json && fjs make ./dist/esm/package.json -c \'{"type":"module"}\'',
+        "build:cjs":
+          'tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c \'{"type":"commonjs"}\'',
+      },
+      type: "module",
     });
 
     if (options.moduleType === "app") {
