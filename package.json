@@ -39,5 +39,17 @@
     "pnpm": ">=9.2.0",
     "npm": "use pnpm!!!!!",
     "yarn": "use pnpm!!!!!"
+  },
+  "publishMeta": {
+    "appId": "com.ryuichi24.ts-template",
+    "appName": "ts-template",
+    "copyright": "Copyright © 2024 com.ryuichi24",
+    "provider": {
+      "github": {
+        "owner": "ryuichi24",
+        "repositoryName": "ts-template",
+        "private": false
+      }
+    }
   }
 }
