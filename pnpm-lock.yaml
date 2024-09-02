@@ -273,6 +273,23 @@ importers:
 
   packages/libs/process-event-emitter/dist/cjs: {}
 
+  packages/libs/process-event-emitter/dist/esm: {}
+
+  packages/libs/seed-script-generator:
+    devDependencies:
+      '@js-boilerplate/fjs':
+        specifier: workspace:*
+        version: link:../../tools/fjs
+      '@js-boilerplate/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@types/node':
+        specifier: ^20.11.20
+        version: 20.14.15
+      typescript:
+        specifier: ^5.4.5
+        version: 5.5.4
+
   packages/libs/type-util:
     devDependencies:
       '@js-boilerplate/fjs':
