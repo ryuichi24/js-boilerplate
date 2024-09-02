@@ -18,21 +18,23 @@ importers:
         specifier: ^2.0.14
         version: 2.0.14
 
+  apps/desktop/background-server: {}
+
   apps/desktop/builder:
     dependencies:
+      '@js-boilerplate/background-server':
+        specifier: workspace:*
+        version: link:../background-server
       '@js-boilerplate/desktop-main':
         specifier: workspace:*
         version: link:../main
       '@js-boilerplate/desktop-renderer':
         specifier: workspace:*
         version: link:../renderer
+    devDependencies:
       '@js-boilerplate/esm-helper':
         specifier: workspace:*
         version: link:../../../packages/libs/esm-helper
-      '@js-boilerplate/server':
-        specifier: workspace:*
-        version: link:../server
-    devDependencies:
       '@js-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../../../packages/config/tsconfig
@@ -111,8 +113,6 @@ importers:
       vite:
         specifier: ^5.1.4
         version: 5.4.1(@types/node@20.14.15)
-
-  apps/desktop/server: {}
 
   dev/playground/node: {}
 
@@ -210,6 +210,24 @@ importers:
       '@js-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../../config/tsconfig
+      '@types/node':
+        specifier: ^20.11.20
+        version: 20.14.15
+      typescript:
+        specifier: ^5.4.5
+        version: 5.5.4
+
+  packages/libs/file-system:
+    devDependencies:
+      '@js-boilerplate/fjs':
+        specifier: workspace:*
+        version: link:../../tools/fjs
+      '@js-boilerplate/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/tsconfig
+      '@js-boilerplate/type-util':
+        specifier: workspace:*
+        version: link:../type-util
       '@types/node':
         specifier: ^20.11.20
         version: 20.14.15
