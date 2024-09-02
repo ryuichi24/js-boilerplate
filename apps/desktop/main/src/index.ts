@@ -1,17 +1,17 @@
 import path from "path";
 import { BrowserWindow, app } from "electron";
-// support common js features
-import { createRequire } from "module";
-import url from "url";
-const require = createRequire(import.meta.url);
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+import { buildESMHelpers } from "@js-boilerplate/esm-helper";
+const { require, __dirname } = buildESMHelpers(import.meta.url);
 //
+const isDev = !app.isPackaged && process.env.NODE_ENV === "development";
+const isDebug = process.env.NODE_ENV === "debug";
+//
+const rendererFilePath = isDebug
+  ? require.resolve("@js-boilerplate/desktop-renderer/dist/index.html")
+  : path.resolve(__dirname, "..", "desktop-renderer", "index.html");
 const preloadScriptPath = path.resolve(__dirname, "preload.mjs");
 const rendererDevServerURL = `http://localhost:${3333}`;
-
-const isDev = true;
-
+//file:///Users/ryuichinishi/dev/personal/projects/js-boilerplate/packages/libs/esm-helper/desktop-renderer/index.html with error: ERR_FILE_NOT_FOUND
 global.mainWindow = null;
 
 async function main() {
@@ -40,7 +40,7 @@ async function main() {
     });
     await global.mainWindow.loadURL(rendererDevServerURL);
   } else {
-    await global.mainWindow.loadFile("");
+    await global.mainWindow.loadFile(rendererFilePath);
   }
 }
 
