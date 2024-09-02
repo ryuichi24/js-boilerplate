@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "name": "@js-boilerplate/esm-helper",
+  "author": "Ryuichi Nishi",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@js-boilerplate/tsconfig": "workspace:*",
+    "@types/node": "^20.11.20",
+    "typescript": "^5.4.5"
+  }
+}
