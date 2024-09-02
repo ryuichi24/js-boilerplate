@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "name": "@js-boilerplate/background-server",
+  "author": "Ryuichi Nishi",
+  "type": "module",
+  "scripts": {}
+}
