@@ -5,7 +5,7 @@ import {
   cpDirIfExist,
   makeDirIfExist,
   makeFile,
-} from "@js-boilerplate/util/file-system";
+} from "@js-boilerplate/file-system";
 import {
   PackageJSON,
   readPackageJsonFile,

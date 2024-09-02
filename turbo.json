@@ -7,60 +7,19 @@
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": []
-    },
-    "@js-boilerplate/desktop-renderer#dev": {
-      "cache": false,
-      "persistent": true,
-      "dependsOn": []
-    },
-    "@js-boilerplate/playground-node#dev": {
-      "cache": false,
-      "persistent": true,
-      "dependsOn": []
-    },
-    "@js-boilerplate/playground-ts-node#dev": {
-      "cache": false,
-      "persistent": true,
-      "dependsOn": []
-    },
-    "@js-boilerplate/playground-react#dev": {
-      "cache": false,
-      "persistent": true,
-      "dependsOn": []
-    },
-    "@js-boilerplate/playground-ts-react#dev": {
-      "cache": false,
-      "persistent": true,
-      "dependsOn": []
+      "dependsOn": ["^build"]
     },
     "build": {
-      "dependsOn": []
-    },
-    "@js-boilerplate/desktop-renderer#build": {},
-    "@js-boilerplate/desktop-main#build": {},
-    "@js-boilerplate/decorator-factory#build": {
-      "dependsOn": ["^@js-boilerplate/util#build"]
-    },
-    "@js-boilerplate/util#build": {
-      "dependsOn": ["^@js-boilerplate/type-util#build"]
-    },
-    "@js-boilerplate/type-util#build": {
-      "dependsOn": []
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
     },
     "@js-boilerplate/desktop-builder#build:publish": {
-      "dependsOn": [
-        "^@js-boilerplate/desktop-renderer#build",
-        "^@js-boilerplate/desktop-main#build"
-      ],
-      "cache": false
+      "cache": false,
+      "dependsOn": ["^build"]
     },
     "@js-boilerplate/desktop-builder#build:local": {
-      "dependsOn": [
-        "^@js-boilerplate/desktop-renderer#build",
-        "^@js-boilerplate/desktop-main#build"
-      ],
-      "cache": false
+      "cache": false,
+      "dependsOn": ["^build"]
     }
   }
 }

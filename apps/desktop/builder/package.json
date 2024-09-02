@@ -13,6 +13,7 @@
   "devDependencies": {
     "@js-boilerplate/tsconfig": "workspace:*",
     "@js-boilerplate/util": "workspace:*",
+    "@js-boilerplate/file-system": "workspace:*",
     "@js-boilerplate/esm-helper": "workspace:*",
     "commander": "^12.1.0",
     "electron-builder": "^24.13.3",

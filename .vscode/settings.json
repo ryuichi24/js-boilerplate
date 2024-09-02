@@ -1,5 +1,8 @@
 {
   // PlantUML
   "plantuml.render": "PlantUMLServer",
-  "plantuml.server": "http://localhost:8080/uml"
+  "plantuml.server": "http://localhost:8080/uml",
+  "files.associations": {
+    "*.json": "jsonc"
+  }
 }

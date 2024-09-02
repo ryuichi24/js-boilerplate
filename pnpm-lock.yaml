@@ -35,6 +35,9 @@ importers:
       '@js-boilerplate/esm-helper':
         specifier: workspace:*
         version: link:../../../packages/libs/esm-helper
+      '@js-boilerplate/file-system':
+        specifier: workspace:*
+        version: link:../../../packages/libs/file-system
       '@js-boilerplate/tsconfig':
         specifier: workspace:*
         version: link:../../../packages/config/tsconfig
@@ -234,6 +237,10 @@ importers:
       typescript:
         specifier: ^5.4.5
         version: 5.5.4
+
+  packages/libs/file-system/dist/cjs: {}
+
+  packages/libs/file-system/dist/esm: {}
 
   packages/libs/type-util:
     devDependencies:
