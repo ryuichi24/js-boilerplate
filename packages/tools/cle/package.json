@@ -1,0 +1,15 @@
+{
+  "name": "@js-boilerplate/cle",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "author": "Ryuichi Nishi",
+  "license": "MIT",
+  "bin": {
+    "cle": "src/index.js"
+  },
+  "dependencies": {
+    "@js-boilerplate/file-system": "workspace:*",
+    "commander": "^12.1.0"
+  }
+}

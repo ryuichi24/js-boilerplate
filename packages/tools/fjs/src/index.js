@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { program } from "commander";
 import fs from "fs";
+import { program } from "commander";
 
 function renameItem(oldPath, newPath) {
   fs.rename(oldPath, newPath, (err) => {

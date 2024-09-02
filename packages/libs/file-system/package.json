@@ -24,10 +24,14 @@
     "build:esm": "tsc -p tsconfig.json && fjs make ./dist/esm/package.json -c '{\"type\":\"module\"}'",
     "build:cjs": "tsc -p tsconfig.cjs.json && fjs make ./dist/cjs/package.json -c '{\"type\":\"commonjs\"}'"
   },
+  "dependencies": {
+    "glob": "^11.0.0"
+  },
   "devDependencies": {
     "@js-boilerplate/fjs": "workspace:*",
     "@js-boilerplate/tsconfig": "workspace:*",
     "@js-boilerplate/type-util": "workspace:*",
+    "@types/glob": "^8.1.0",
     "@types/node": "^20.11.20",
     "typescript": "^5.4.5"
   }

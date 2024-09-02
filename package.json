@@ -21,7 +21,9 @@
     "add-module:lib:esm": "hitotsu add -t lib",
     "add-module:lib:common": "hitotsu add -t lib -cjs",
     "add-module:empty:esm": "hitotsu add -t empty",
-    "add-module:empty:common": "hitotsu add -t empty -cjs"
+    "add-module:empty:common": "hitotsu add -t empty -cjs",
+    "clean": "cle clean . --entries node_modules,.turbo,dist,release",
+    "postinstall": "pnpm build"
   },
   "keywords": [],
   "author": "Ryuichi Nishi",
@@ -29,7 +31,8 @@
   "devDependencies": {
     "dotenv-cli": "^7.4.2",
     "turbo": "^2.0.14",
-    "@js-boilerplate/hitotsu": "workspace:*"
+    "@js-boilerplate/hitotsu": "workspace:*",
+    "@js-boilerplate/cle": "workspace:*"
   },
   "packageManager": "pnpm@9.2.0",
   "engines": {

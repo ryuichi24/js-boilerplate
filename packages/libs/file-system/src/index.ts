@@ -1,4 +1,5 @@
 import fs from "fs";
+import { glob } from "glob";
 
 export function rename(oldPath: string, newPath: string) {
   fs.rename(oldPath, newPath, (err) => {
@@ -97,4 +98,31 @@ export function cpDirIfExist(
 ) {
   if (!dirExist(from)) return;
   fs.cpSync(from, to, options);
+}
+
+export function searchAll(targetDir: string, entries: string[]) {
+  const foundDirs: string[] = [];
+  const foundFiles: string[] = [];
+
+  function makeGlobPattern(targetDir: string, entry: string) {
+    const pattern = `${targetDir}/**/*/${entry}`;
+    return pattern;
+  }
+
+  entries.forEach((entry) => {
+    const pattern = makeGlobPattern(targetDir, entry);
+    const foundItems = glob.sync(pattern);
+    foundItems.forEach((itemPath) => {
+      const isDir = fs.statSync(itemPath).isDirectory();
+      if (isDir) {
+        foundDirs.push(itemPath);
+      }
+
+      if (!isDir) {
+        foundFiles.push(itemPath);
+      }
+    });
+  });
+
+  return { foundDirs, foundFiles } as const;
 }
